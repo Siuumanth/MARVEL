@@ -23,3 +23,37 @@ function connect(){
         ws = null;
     }
 }
+
+
+//checks if the connection is already open or not
+document.getElementById("open-button").addEventListener("click", function(){
+    if(ws==null){
+        connect();
+    }else{
+        document.getElementById("status").innerHTML = "Connection is already open";
+    }
+});
+
+
+//Send button
+document.getElementById("send-button").addEventListener("click", function(){
+    var message = document.getElementById("messageInput").value;
+    jsonmsg = JSON.stringify({
+        actionn: 'sendMessage',
+        data: message
+    });
+    ws.send(jsonmsg);
+
+    document.getElementById("status").innerHTML = `Message sent: ${message}`;
+    alert(`Message sent: ${jsonmsg}`);
+});
+
+document.getElementById("close-button").addEventListener("click", function(){
+    if(ws != null){
+        ws.close();
+        document.getElementById("status").innerHTML = "Connection closed";
+    }
+    else{
+        document.getElementById("status").innerHTML = "Connection is already closed";
+    }
+});
