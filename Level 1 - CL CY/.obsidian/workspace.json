@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "5490981dedb01af7",
+    "type": "split",
+    "children": [
+      {
+        "id": "018f5cb8fa266151",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cabccdc21d046c12",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "28854f7ad1a39278",
+    "type": "split",
+    "children": [
+      {
+        "id": "a908ac6ec012db6a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "061a5e9b72c03cbe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "70222baa60e58354",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "63200df6bf1635c9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "c40026ec520faa4a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "6cb9f1cf7c0bff89",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3b5893c8cf5fabf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "37d3c429dc0ba52a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "2729829c50903b14",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "b1678cbadd8461c3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3b15bc65d4cb0636",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "cabccdc21d046c12",
+  "lastOpenFiles": [
+    "Untitled",
+    "Level 1 - CL-CY - Report.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Codes/Sockets.md",
+    "Level 2 - CL-CY.md",
+    "Images/7-PUT.png",
+    "Images/7-POST.png",
+    "Images/7-GET.png",
+    "Images/7-DEL.png",
+    "Images/7-code.png",
+    "Images/6-scanme.png",
+    "Images/6-ports.png",
+    "Images/6-normal_scan.png",
+    "Images/5-IP.png",
+    "Images/5-BS.png",
+    "Level 2.md",
+    "Codes/socket/node_modules/socket.io-parser/node_modules/debug/src/node.js",
+    "Codes/socket/node_modules/socket.io-parser/node_modules/debug/src/index.js",
+    "Codes/socket/node_modules/socket.io-parser/node_modules/debug/src/common.js",
+    "Codes/socket/node_modules/socket.io-parser/node_modules/debug/src/browser.js",
+    "Codes/socket/node_modules/socket.io-adapter/node_modules/debug/src/node.js",
+    "Codes/socket/node_modules/socket.io-adapter/node_modules/debug/src/index.js",
+    "Codes/socket/node_modules/socket.io-adapter/node_modules/debug/src/common.js",
+    "Codes/socket/node_modules/socket.io-adapter/node_modules/debug/src/browser.js",
+    "Codes/socket/node_modules/socket.io/node_modules/debug/src/node.js",
+    "Codes/socket/node_modules/socket.io/node_modules/debug/src/index.js",
+    "Codes/socket/node_modules/socket.io-parser/node_modules/ms/readme.md",
+    "Codes/socket/node_modules/socket.io-parser/node_modules/ms/license.md",
+    "Codes/socket/node_modules/socket.io-parser/node_modules/debug/README.md",
+    "Codes/socket/node_modules/socket.io-adapter/node_modules/ms/readme.md",
+    "Codes/socket/node_modules/socket.io-adapter/node_modules/ms/license.md",
+    "Codes/socket/node_modules/socket.io-adapter/node_modules/debug/README.md",
+    "Codes/socket/node_modules/socket.io/node_modules/ms/readme.md",
+    "Codes/socket/node_modules/socket.io/node_modules/ms/license.md",
+    "Codes/socket/node_modules/socket.io/node_modules/debug/README.md",
+    "Codes/socket/node_modules/send/node_modules/ms/readme.md",
+    "Codes/socket/node_modules/send/node_modules/ms/license.md",
+    "Codes/socket/node_modules/send/node_modules/encodeurl/README.md",
+    "Codes/socket/node_modules/send/node_modules/encodeurl/HISTORY.md",
+    "Codes/socket/node_modules/engine.io/node_modules/ms/readme.md",
+    "Codes/socket/node_modules/engine.io/node_modules/ms/license.md",
+    "Codes/socket/node_modules/engine.io/node_modules/debug/README.md",
+    "Codes/socket/node_modules/engine.io/node_modules/cookie/SECURITY.md",
+    "Codes/socket/node_modules/engine.io/node_modules/cookie/README.md",
+    "Codes/socket/node_modules/@socket.io/component-emitter/Readme.md",
+    "Codes/socket/node_modules/@types/node/README.md",
+    "Codes/socket/node_modules/@types/cors/README.md"
+  ]
+}
