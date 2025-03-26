@@ -1,5 +1,4 @@
 var ws;
-
 function connect(){
     var url = 'wss://55uuoxgho2.execute-api.eu-north-1.amazonaws.com/production/'
     ws = new WebSocket(url)
