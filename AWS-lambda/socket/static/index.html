@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat APP</title>
+
+</head>
+<body>
+    <h1> Chat maadi</h1>
+    <div id = "status"></div>
+    <input type = "text" id = "messageInput" placeholder = "Message maadu">
+    <button id = "open-button">Open Connection</button>
+    <button id = "sendBTN">Send</button>
+    <button id = "close-button">Close Connection</button>
+    
+
+    <script src = "chat.js"></script>
+</body>
+</html>
+
+
+
+<script>
+   const socket = io();
+   const SendButton = document.getElementById('sendBTN');
+   const MessageInput = document.getElementById('message');
+   const allMessages = document.getElementById('messages');
+
+
+   socket.on("message", (message) =>{
+    const p = document.createElement('p');
+    p.innerText = message;
+    allMessages.appendChild(p);
+   }) 
+
+
+
+   SendButton.addEventListener('click', e =>{
+    const message = messageInput.value;
+    console.log(message);
+    
+    //now we have to send the message to the server side
+
+    socket.emit('user-message',message) //emit means send message to server(by json)
+   })
+
+  
+</script>

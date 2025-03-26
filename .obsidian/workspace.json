@@ -1,0 +1,256 @@
+{
+  "main": {
+    "id": "866d5d154e06653a",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b0e70869701dbd5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2edebaa77a9ea9b7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
+          },
+          {
+            "id": "5b6bf8333c6f1711",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SSH/Theory-SSH.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Theory-SSH"
+            }
+          },
+          {
+            "id": "68e66d12c16a8c99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS-lambda/AWS-intro.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AWS-intro"
+            }
+          },
+          {
+            "id": "b09bddd372e1fc7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS-lambda/AWS-chatApp.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AWS-chatApp"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fe8a20ca5da7b20c",
+    "type": "split",
+    "children": [
+      {
+        "id": "139c87bab8486564",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae0c7dc790e69cad",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9001d51af9f31eae",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "419d9538ffe445be",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "20f68de8e396d686",
+    "type": "split",
+    "children": [
+      {
+        "id": "658ee554bf30bf4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7bf9e47e749662f4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "level2.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for level2.md"
+            }
+          },
+          {
+            "id": "487a4e8955e882d9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "level2.md.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from level2.md"
+            }
+          },
+          {
+            "id": "879990450c81a8c8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8dc0ceefd805a90f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "level2.md.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of level2.md"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b09bddd372e1fc7c",
+  "lastOpenFiles": [
+    "AWS-lambda/socket/static/chat.js",
+    "AWS-lambda/socket/server.js",
+    "AWS-lambda/socket/static/index.html",
+    "AWS-lambda/socket/static",
+    "AWS-lambda/socket/node_modules/@types/node/timers/promises.d.ts",
+    "AWS-lambda/socket/node_modules/@types/node/timers",
+    "AWS-lambda/socket/node_modules/@types/node/stream/web.d.ts",
+    "AWS-lambda/socket/node_modules/@types/node/stream/promises.d.ts",
+    "AWS-lambda/socket/node_modules/@types/node/stream/consumers.d.ts",
+    "AWS-lambda/socket/node_modules/@types/node/stream",
+    "AWS-lambda/socket/node_modules/has-property-descriptors/test/index.js",
+    "AWS-lambda/socket/node_modules/has-property-descriptors/README.md",
+    "AWS-lambda/socket/node_modules/has-property-descriptors/CHANGELOG.md",
+    "AWS-lambda/socket/node_modules/ws/README.md",
+    "AWS-lambda/socket/node_modules/utils-merge/README.md",
+    "AWS-lambda/socket/node_modules/unpipe/README.md",
+    "AWS-lambda/socket/node_modules/unpipe/HISTORY.md",
+    "AWS-lambda/socket/node_modules/undici-types/README.md",
+    "AWS-lambda/socket/node_modules/type-is/README.md",
+    "AWS-lambda/socket/node_modules/type-is/HISTORY.md",
+    "AWS-lambda/socket/node_modules/toidentifier/README.md",
+    "AWS-lambda/socket/node_modules/toidentifier/HISTORY.md",
+    "AWS-lambda/socket/node_modules/statuses/README.md",
+    "AWS-lambda/socket/node_modules/statuses/HISTORY.md",
+    "AWS-lambda/socket/node_modules/socket.io-parser/node_modules/ms/readme.md",
+    "AWS-lambda/socket/node_modules/socket.io-parser/node_modules/ms/license.md",
+    "AWS-lambda/socket/node_modules/socket.io-parser/node_modules/debug/README.md",
+    "AWS-lambda/socket/node_modules/socket.io-parser/Readme.md",
+    "AWS-lambda/socket/node_modules/socket.io-adapter/node_modules/ms/readme.md",
+    "AWS-lambda/socket/node_modules/socket.io-adapter/node_modules/ms/license.md",
+    "AWS-lambda/socket/node_modules/socket.io-adapter/node_modules/debug/README.md",
+    "AWS-lambda/socket/node_modules/socket.io-adapter/Readme.md",
+    "AWS-lambda/socket/node_modules/socket.io/node_modules/debug/README.md",
+    "AWS-lambda/socket/node_modules/socket.io/node_modules/ms/readme.md",
+    "AWS-lambda/socket/node_modules/socket.io/node_modules/ms/license.md",
+    "AWS-lambda/socket/node_modules/socket.io/Readme.md",
+    "images/1-metrics.png",
+    "images/Screenshot 2025-03-26 001619.png",
+    "images/1-testing.png",
+    "images/Screenshot 2025-03-26 000040.png",
+    "images/1-console.png",
+    "images/Screenshot 2025-03-25 234906.png",
+    "images/6-container.png",
+    "images/6-running.png",
+    "images/6-dockerfile.png",
+    "images/6-ddesktop.png"
+  ]
+}
