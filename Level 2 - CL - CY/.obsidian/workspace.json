@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform/Terraform.md",
+                "file": "Terraform/Terraform - practical.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Terraform"
+              "title": "Terraform - practical"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "20f68de8e396d686",
@@ -166,6 +165,9 @@
   },
   "active": "95dcb7d9d6f22e22",
   "lastOpenFiles": [
+    "Terraform/tf-practical",
+    "Terraform/Terraform-basics.md",
+    "Terraform/Terraform - practical.md",
     "Terraform/test-tf/terraform.tfstate.backup",
     "Terraform/test-tf/terraform.tfstate",
     "Terraform/test-tf/main.tf",
@@ -175,13 +177,11 @@
     "Terraform/test-proj/main.tf",
     "Terraform/test-proj",
     "AWS/AWS-basics/AWS-EC2.md",
-    "Terraform/Terraform.md",
     "Pasted image 20250327135251.png",
     "Terraform",
     "Nmap",
     "SSH/Theory-SSH.md",
     "WireShark/Wireshark-Intro.md",
-    "WireShark",
     "AWS/AWS-lambda/AWS-intro.md",
     "AWS/AWS-ChatApp/Chat App.md",
     "AWS/AWS-ChatApp/Chat-app/node_modules/ms/license.md",
@@ -202,7 +202,6 @@
     "AWS/AWS-lambda/socket/node_modules/statuses/README.md",
     "AWS/AWS-lambda/socket/node_modules/statuses/HISTORY.md",
     "AWS/AWS-lambda/socket/node_modules/socket.io-parser/node_modules/ms/readme.md",
-    "AWS/AWS-lambda/socket/node_modules/socket.io-parser/node_modules/ms/license.md",
     "images/1-metrics.png",
     "images/Screenshot 2025-03-26 001619.png",
     "images/1-testing.png",
