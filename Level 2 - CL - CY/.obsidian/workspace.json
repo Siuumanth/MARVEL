@@ -25,21 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SSH/Theory-SSH.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Theory-SSH"
-            }
-          },
-          {
-            "id": "68e66d12c16a8c99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWS-lambda/AWS-intro.md",
+                "file": "AWS/AWS-lambda/AWS-intro.md",
                 "mode": "source",
                 "source": false
               },
@@ -48,17 +34,17 @@
             }
           },
           {
-            "id": "b09bddd372e1fc7c",
+            "id": "0780b5af960aee34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/AWS-basics/AWS-EC2.md",
+                "file": "AWS/AWS-ChatApp/Chat App.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS-EC2"
+              "title": "Chat App"
             }
           },
           {
@@ -76,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -133,8 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "20f68de8e396d686",
@@ -219,22 +204,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b09bddd372e1fc7c",
+  "active": "0780b5af960aee34",
   "lastOpenFiles": [
-    "AWS/AWS-basics/AWS-basics.md",
-    "AWS/AWS-basics/AWS-EC2.md",
-    "AWS/AWS-basics/AWS-DynamoDB.md",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/mute-stream/lib/index.js",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/mute-stream/lib",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/commander/typings/index.d.ts",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/commander/typings/esm.d.mts",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/commander/typings",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/commander/package-support.json",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/read/dist/esm/read.js.map",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/read/dist/esm/read.js",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/read/dist/esm/read.d.ts.map",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/read/dist/esm/read.d.ts",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/read/dist/esm/package.json",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/ms/license.md",
+    "AWS/AWS-lambda/AWS-intro.md",
+    "AWS/AWS-ChatApp/Chat App.md",
     "AWS/AWS-lambda/AWS-chatApp.md",
-    "AWS/AWS-basics",
-    "AWS",
-    "AWS/AWS-lambda/socket/static/chat.js",
-    "AWS/AWS-lambda/socket/server.js",
-    "AWS/AWS-lambda/socket/static/index.html",
-    "AWS/AWS-lambda/socket/static",
-    "AWS/AWS-lambda/socket/node_modules/@types/node/timers/promises.d.ts",
-    "AWS/AWS-lambda/socket/node_modules/@types/node/timers",
-    "AWS/AWS-lambda/socket/node_modules/@types/node/stream/web.d.ts",
-    "AWS/AWS-lambda/socket/node_modules/@types/node/stream/promises.d.ts",
+    "SSH/Theory-SSH.md",
+    "AWS/AWS-basics/AWS-EC2.md",
+    "AWS/AWS-basics/AWS-basics.md",
+    "AWS/AWS-basics/AWS-DynamoDB.md",
     "AWS/AWS-lambda/socket/node_modules/has-property-descriptors/README.md",
     "AWS/AWS-lambda/socket/node_modules/has-property-descriptors/CHANGELOG.md",
     "AWS/AWS-lambda/socket/node_modules/ws/README.md",
@@ -252,11 +242,6 @@
     "AWS/AWS-lambda/socket/node_modules/socket.io-parser/node_modules/ms/license.md",
     "AWS/AWS-lambda/socket/node_modules/socket.io-parser/node_modules/debug/README.md",
     "AWS/AWS-lambda/socket/node_modules/socket.io-parser/Readme.md",
-    "AWS/AWS-lambda/socket/node_modules/socket.io-adapter/node_modules/ms/readme.md",
-    "AWS/AWS-lambda/socket/node_modules/socket.io-adapter/node_modules/ms/license.md",
-    "AWS/AWS-lambda/socket/node_modules/socket.io-adapter/node_modules/debug/README.md",
-    "AWS/AWS-lambda/socket/node_modules/socket.io-adapter/Readme.md",
-    "AWS/AWS-lambda/socket/node_modules/socket.io/node_modules/debug/README.md",
     "images/1-metrics.png",
     "images/Screenshot 2025-03-26 001619.png",
     "images/1-testing.png",
