@@ -38,3 +38,8 @@ Amazon **Elastic Compute Cloud (EC2)** provides **virtual servers (instances)** 
 - **Manage Files** – Upload/download files using SCP or SFTP.
 - **Run Scripts & Services** – Start/stop applications, run Python scripts, Docker containers, etc.
 - **Monitor System** – Check logs, resource usage (`top`, `htop`), and troubleshoot issues.
+
+
+
+# Launching a new instance
+Lets deploy an AMI (image) 
