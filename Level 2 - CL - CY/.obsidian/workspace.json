@@ -11,10 +11,14 @@
             "id": "5ecbb686feff0df7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "WireShark/Wireshark-Intro.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Wireshark-Intro"
             }
           }
         ]
@@ -74,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "20f68de8e396d686",
@@ -162,13 +165,13 @@
   },
   "active": "5ecbb686feff0df7",
   "lastOpenFiles": [
+    "WireShark/Pasted image 20250328145801.png",
     "WireShark/Wireshark-Intro.md",
-    "Pasted image 20250328145801.png",
-    "Pasted image 20250328145015.png",
-    "Pasted image 20250328144229.png",
-    "Pasted image 20250328140216.png",
-    "Pasted image 20250328134322.png",
-    "Pasted image 20250328133722.png",
+    "WireShark/Pasted image 20250328145015.png",
+    "WireShark/Pasted image 20250328144229.png",
+    "WireShark/Pasted image 20250328140216.png",
+    "WireShark/Pasted image 20250328134322.png",
+    "WireShark/Pasted image 20250328133722.png",
     "Selenium/Basics-selenium.md",
     "Selenium/Task/expedia.py",
     "Selenium/Task",
