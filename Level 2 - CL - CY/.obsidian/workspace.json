@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c301385b4f861c82",
+        "id": "b598bb96f6b06095",
         "type": "tabs",
         "children": [
           {
-            "id": "95dcb7d9d6f22e22",
+            "id": "5ecbb686feff0df7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terraform/Terraform - practical.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Terraform - practical"
+              "title": "New tab"
             }
           }
         ]
@@ -164,25 +160,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "95dcb7d9d6f22e22",
+  "active": "5ecbb686feff0df7",
   "lastOpenFiles": [
+    "WireShark/Wireshark-Intro.md",
+    "Pasted image 20250328145801.png",
+    "Pasted image 20250328145015.png",
+    "Pasted image 20250328144229.png",
+    "Pasted image 20250328140216.png",
+    "Pasted image 20250328134322.png",
+    "Pasted image 20250328133722.png",
+    "Selenium/Basics-selenium.md",
+    "Selenium/Task/expedia.py",
+    "Selenium/Task",
+    "Selenium/seletest.py",
+    "Selenium/test/seletest.py",
+    "Selenium/test/sele.py",
+    "Selenium/test",
+    "Terraform/Terraform - practical.md",
+    "Selenium",
     "Terraform/tf-practical/main-key2.ppk",
     "Terraform/tf-practical/main-key2.pem",
     "Terraform/tf-practical/main-key2.pem.opdownload",
-    "Terraform/tf-practical/terraform.tfstate.backup",
-    "Terraform/tf-practical/terraform.tfstate",
-    "Terraform/tf-practical/main-key.pem",
-    "Terraform/tf-practical/main-key.pem.opdownload",
-    "Terraform/tf-practical/main.tf",
-    "Terraform/tf-practical",
     "Terraform/Terraform-basics.md",
-    "Terraform/Terraform - practical.md",
-    "Terraform/test-tf/terraform.tfstate.backup",
-    "Terraform/test-tf/terraform.tfstate",
     "AWS/AWS-basics/AWS-EC2.md",
     "Pasted image 20250327135251.png",
     "SSH/Theory-SSH.md",
-    "WireShark/Wireshark-Intro.md",
     "AWS/AWS-lambda/AWS-intro.md",
     "AWS/AWS-ChatApp/Chat App.md",
     "AWS/AWS-ChatApp/Chat-app/node_modules/ms/license.md",
@@ -202,15 +204,8 @@
     "AWS/AWS-lambda/socket/node_modules/toidentifier/HISTORY.md",
     "AWS/AWS-lambda/socket/node_modules/statuses/README.md",
     "AWS/AWS-lambda/socket/node_modules/statuses/HISTORY.md",
-    "AWS/AWS-lambda/socket/node_modules/socket.io-parser/node_modules/ms/readme.md",
     "images/1-metrics.png",
     "images/Screenshot 2025-03-26 001619.png",
-    "images/1-testing.png",
-    "images/Screenshot 2025-03-26 000040.png",
-    "images/1-console.png",
-    "images/Screenshot 2025-03-25 234906.png",
-    "images/6-container.png",
-    "images/6-running.png",
-    "images/6-dockerfile.png"
+    "images/1-testing.png"
   ]
 }
