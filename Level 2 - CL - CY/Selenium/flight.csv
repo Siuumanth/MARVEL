@@ -1,0 +1,15 @@
+Price (INR),Flight Type,Airline,Departure Airport,Departure Time,Departure Date,Arrival Airport,Arrival Time,Arrival Date,Total Duration,Layover Details
+14964,1 stop,IndiGo,Kempegowda International Airport Bengaluru,7:25 PM,March 29,Indira Gandhi International Airport,12:25 AM,March 30,5 hr,1 hr 10 min layover at Chaudhary Charan Singh International Airport Lucknow
+16236,Nonstop,IndiGo,Kempegowda International Airport Bengaluru,9:50 PM,March 29,Indira Gandhi International Airport,12:50 AM,March 30,3 hr,
+17139,Nonstop,Air India,Kempegowda International Airport Bengaluru,7:55 PM,March 29,Indira Gandhi International Airport,10:45 PM,March 29,2 hr 50 min,
+14964,1 stop,IndiGo (Operated Under Lease From Smartlynx),Kempegowda International Airport Bengaluru,4:40 PM,March 29,Indira Gandhi International Airport,10:35 PM,March 29,5 hr 55 min,2 hr 25 min layover at Dr. Babasaheb Ambedkar International Airport Nagpur
+14964,1 stop,IndiGo,Kempegowda International Airport Bengaluru,6:30 PM,March 29,Indira Gandhi International Airport,11:40 PM,March 29,5 hr 10 min,1 hr 20 min layover at Chennai International Airport Chennai
+14964,1 stop,IndiGo,Kempegowda International Airport Bengaluru,7:45 PM,March 29,Indira Gandhi International Airport,1:05 AM,March 30,5 hr 20 min,1 hr 45 min layover at Dr. Babasaheb Ambedkar International Airport Nagpur
+15607,1 stop,IndiGo,Kempegowda International Airport Bengaluru,6:50 PM,March 29,Indira Gandhi International Airport,11:45 PM,March 29,4 hr 55 min,1 hr 15 min layover at Rajiv Gandhi International Airport Hyderabad
+16030,1 stop,IndiGo,Kempegowda International Airport Bengaluru,11:30 PM,March 29,Indira Gandhi International Airport,5:15 AM,March 30,5 hr 45 min,1 hr 40 min overnight layover at Chhatrapati Shivaji Maharaj International Airport Mumbai
+16236,Nonstop,IndiGo,Kempegowda International Airport Bengaluru,3:20 PM,March 29,Indira Gandhi International Airport,6:05 PM,March 29,2 hr 45 min,
+17139,Nonstop,Air India,Kempegowda International Airport Bengaluru,5:45 PM,March 29,Indira Gandhi International Airport,8:40 PM,March 29,2 hr 55 min,
+20456,Nonstop,Akasa Air,Kempegowda International Airport Bengaluru,5:00 AM,March 29,Indira Gandhi International Airport,7:50 AM,March 29,2 hr 50 min,
+21438,Nonstop,IndiGo,Kempegowda International Airport Bengaluru,6:00 PM,March 29,Indira Gandhi International Airport,8:55 PM,March 29,2 hr 55 min,
+22995,Nonstop,SpiceJet,Kempegowda International Airport Bengaluru,5:55 AM,March 29,Indira Gandhi International Airport,8:45 AM,March 29,2 hr 50 min,
+25533,Nonstop,IndiGo,Kempegowda International Airport Bengaluru,7:00 AM,March 29,Indira Gandhi International Airport,9:55 AM,March 29,2 hr 55 min
