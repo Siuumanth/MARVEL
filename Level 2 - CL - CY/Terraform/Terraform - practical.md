@@ -544,3 +544,5 @@ resource "aws_instance" "web-server-instance" {
 
 This setup results in a **publicly accessible** web server running Apache on Ubuntu.
 
+
+

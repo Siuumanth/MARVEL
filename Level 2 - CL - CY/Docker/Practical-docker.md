@@ -51,8 +51,10 @@ Docker images can be broadly categorized into:
 
 #### `docker run -it  ubuntu` :
 creates an image of ubuntu
+- `docker run <image_name>`: runs the image and creates a container
 - `docker containers ls` : lists  all open and closed containers on your device.
-
+- `docker ps`: shows all running containers
+- 
 -  `docker start <container_name>` 
 -  `docker stop <container_name>`
 starts and stops containers
