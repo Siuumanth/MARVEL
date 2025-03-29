@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "b598bb96f6b06095",
+        "id": "bf956bab10ec99c4",
         "type": "tabs",
         "children": [
           {
-            "id": "5ecbb686feff0df7",
+            "id": "65e578aa5f32e475",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WireShark/Wireshark-Intro.md",
+                "file": "SSH/Theory-SSH.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wireshark-Intro"
+              "title": "Theory-SSH"
+            }
+          },
+          {
+            "id": "6c6a7cd426a3028b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jenkins/Jenkins.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Jenkins"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,53 +178,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ecbb686feff0df7",
+  "active": "6c6a7cd426a3028b",
   "lastOpenFiles": [
-    "Selenium/practical/2gflights.py",
-    "Selenium/practical/kayak.py",
-    "Selenium/practical/FlightScraper python bot for kayak.ipynb",
-    "Selenium/practical/FlightScraper python bot for kayak.ipynb.opdownload",
-    "Selenium/practical",
-    "Selenium/tests/gtest.py",
-    "Selenium/tests/seletest.py",
-    "Selenium/tests/gflights.py",
-    "Selenium/tests/flight.py",
-    "Selenium/tests/expedia.py",
-    "Selenium/tests/2gflights.py",
-    "WireShark/Pasted image 20250328145801.png",
-    "WireShark/Wireshark-Intro.md",
-    "WireShark/Pasted image 20250328145015.png",
-    "WireShark/Pasted image 20250328144229.png",
-    "WireShark/Pasted image 20250328140216.png",
-    "WireShark/Pasted image 20250328134322.png",
-    "WireShark/Pasted image 20250328133722.png",
-    "Selenium/Basics-selenium.md",
-    "Terraform/Terraform - practical.md",
-    "Terraform/Terraform-basics.md",
-    "AWS/AWS-basics/AWS-EC2.md",
-    "Pasted image 20250327135251.png",
+    "images/8-final.png",
+    "images/8-table.png",
+    "images/8-WIP.png",
+    "images/2-jfile.png",
+    "images/2-jlogs.png",
+    "images/2-logs.png",
+    "level2.md.md",
+    "images/10-final.png",
+    "images/10-table.png",
+    "images/Screenshot 2025-03-29 001809.png",
+    "images/10-WIP.png",
+    "images/Screenshot (441).png",
+    "Terraform/main.tf",
+    "SSH/SSH-task.md",
+    "Docker-spy/myServer.py",
+    "Docker-spy/intro.md",
+    "Docker-spy",
     "SSH/Theory-SSH.md",
-    "AWS/AWS-lambda/AWS-intro.md",
-    "AWS/AWS-ChatApp/Chat App.md",
-    "AWS/AWS-ChatApp/Chat-app/node_modules/ms/license.md",
-    "AWS/AWS-lambda/AWS-chatApp.md",
-    "AWS/AWS-basics/AWS-basics.md",
-    "AWS/AWS-basics/AWS-DynamoDB.md",
-    "AWS/AWS-lambda/socket/node_modules/has-property-descriptors/README.md",
-    "AWS/AWS-lambda/socket/node_modules/has-property-descriptors/CHANGELOG.md",
-    "AWS/AWS-lambda/socket/node_modules/ws/README.md",
-    "AWS/AWS-lambda/socket/node_modules/utils-merge/README.md",
-    "AWS/AWS-lambda/socket/node_modules/unpipe/README.md",
-    "AWS/AWS-lambda/socket/node_modules/unpipe/HISTORY.md",
-    "AWS/AWS-lambda/socket/node_modules/undici-types/README.md",
-    "AWS/AWS-lambda/socket/node_modules/type-is/README.md",
-    "AWS/AWS-lambda/socket/node_modules/type-is/HISTORY.md",
-    "AWS/AWS-lambda/socket/node_modules/toidentifier/README.md",
-    "AWS/AWS-lambda/socket/node_modules/toidentifier/HISTORY.md",
-    "AWS/AWS-lambda/socket/node_modules/statuses/README.md",
-    "AWS/AWS-lambda/socket/node_modules/statuses/HISTORY.md",
-    "images/1-metrics.png",
-    "images/Screenshot 2025-03-26 001619.png",
-    "images/1-testing.png"
+    "Jenkins/Jenkins.md",
+    "Jenkins/jenTest/Jenkinsfile",
+    "Docker/nginx/Jenkinsfile",
+    "Jenkins/jenTest/server.js",
+    "Jenkins/jenTest/package.json",
+    "Jenkins/jenTest/package-lock.json",
+    "Jenkins/jenTest/index.html",
+    "Jenkins/jenTest/Dockerfile",
+    "Jenkins/jenTest/node_modules/send/node_modules/ms/readme.md",
+    "Jenkins/jenTest/node_modules/send/node_modules/ms/license.md",
+    "Jenkins/jenTest/node_modules/send/node_modules/encodeurl/README.md",
+    "Jenkins/jenTest/node_modules/send/node_modules/encodeurl/HISTORY.md",
+    "Jenkins/jenTest/node_modules/vary/README.md",
+    "Jenkins/jenTest/node_modules/vary/HISTORY.md",
+    "Jenkins/jenTest/node_modules/utils-merge/README.md",
+    "Jenkins/jenTest/node_modules/unpipe/README.md",
+    "Jenkins/jenTest/node_modules/unpipe/HISTORY.md",
+    "Jenkins/jenTest/node_modules/type-is/README.md",
+    "Jenkins/jenTest/node_modules/type-is/HISTORY.md",
+    "Jenkins/jenTest/node_modules/toidentifier/README.md",
+    "Jenkins/jenTest/node_modules/toidentifier/HISTORY.md",
+    "Jenkins/jenTest/node_modules/statuses/README.md",
+    "Jenkins/jenTest/node_modules/statuses/HISTORY.md",
+    "Jenkins/jenTest/node_modules/side-channel-weakmap/README.md",
+    "Jenkins/jenTest/node_modules/side-channel-weakmap/CHANGELOG.md",
+    "Jenkins/jenTest/node_modules/side-channel-map/README.md",
+    "Jenkins/jenTest/node_modules/side-channel-map/CHANGELOG.md",
+    "Jenkins/jenTest/node_modules/side-channel-list/README.md"
   ]
 }
