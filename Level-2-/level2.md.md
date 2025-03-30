@@ -1,3 +1,23 @@
+# TASK 1: AWS Lambda
+
+Since this is my first time getting into Amazon Web Services (AWS), I started my learning the fundamentals of Cloud Computing with AWS before I went ahead with this task. I first learnt about the AWS console, then gained knowledge about core services like EC2 instances, Dynamo DB, S3 buckets, etc. Next I went on to learning serverless computing with AWS lambda.
+### **Serverless with AWS**
+It sounds like there are no servers, but it just means that you don't have to **manage servers**—AWS, GCP or any cloud service will handle them for us. We just write our code normally and it runs **only when it is needed**, responding to events. AWS automatically manages the infrastructure, scaling, and execution of our defined functions in response to triggers.
+**FaaS or Function as a Service**  is a part of serverless architecture. It is a way to achieve it, by breaking our apps into small, independent functions, that run only when triggered. We pay only when we use it.
+### **AWS Lambda**
+It is the **FaaS platform of AWS**. We can define a function, upload it and AWS runs when its triggered. To get started, I followed the AWS' official tutorial on creating a simple "Hello World" function for testing. Next, I went ahead creating the Chat App.
+
+1. `API Gateway`: First, I created an API gateway for Web Sockets Management, for realtime communication. For the route selection expressions, I chose the 3 basic ones which handle:
+      - `$connect route`: client connection 
+      - `$disconnect route`: disconnection
+      -  `$default route`: message sharing
+      
+2. `Attaching Integrations:` I created 3 lambda functions to manage each of the above routes, and linked them. After these steps, I got the WebSocket URL which I could then integrate with my app. 
+
+Code for web socket:
+![umm](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level%202%20-%20CL%20-%20CY/images/1-code.png?raw=true)
+
+
 
 ## TASK 2: CI/CD (Continuous Integration & Continuous Delivery) - Intro to Jenkins
 
