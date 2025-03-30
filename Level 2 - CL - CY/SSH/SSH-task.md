@@ -71,7 +71,6 @@ This Bash script does the following:
     
 
 
-
 ```PEM_FILE="$HOME/.ssh/main-key2.pem"
 USER="ubuntu" 
 HOST="publicIP"
