@@ -6,7 +6,7 @@
       {
         "id": "f08b26b25cc42a27",
         "type": "tabs",
-        "dimension": 40.40247678018576,
+        "dimension": 39.241486068111456,
         "children": [
           {
             "id": "e3dae8f083193f80",
@@ -41,7 +41,7 @@
       {
         "id": "a4f62e82c3c13732",
         "type": "tabs",
-        "dimension": 59.59752321981424,
+        "dimension": 60.758513931888544,
         "children": [
           {
             "id": "b75887efa5a19cc1",
@@ -203,6 +203,11 @@
   "lastOpenFiles": [
     "AWS/AWS-lambda/AWS-chatApp.md",
     "level2.md.md",
+    "AWS/AWS-ChatApp/Chat-app/server.js",
+    "AWS/AWS-ChatApp/Chat-app/index.html",
+    "AWS/AWS-ChatApp/Chat-app/node_modules/index.html",
+    "AWS/AWS-ChatApp/Chat-app/chat.js",
+    "AWS/AWS-ChatApp/Chat-app/chat.jjs",
     "AWS/AWS-lambda/AWS-intro.md",
     "AWS/AWS-basics/AWS-basics.md",
     "images/10-scanme.png",
@@ -226,11 +231,6 @@
     "Docker-spy/Spyware/spyware.py",
     "Docker-spy/Spyware",
     "Jenkins/Jenkins.md",
-    "Docker-spy/monitoring/images",
-    "Docker-spy/TEST.PY",
-    "Docker-spy/monitoring",
-    "Docker-spy/spyware.py",
-    "Docker-spy/folder",
     "Jenkins/jenTest/node_modules/send/node_modules/ms/readme.md",
     "Jenkins/jenTest/node_modules/send/node_modules/ms/license.md",
     "Jenkins/jenTest/node_modules/send/node_modules/encodeurl/README.md",
@@ -245,7 +245,6 @@
     "Jenkins/jenTest/node_modules/toidentifier/README.md",
     "Jenkins/jenTest/node_modules/toidentifier/HISTORY.md",
     "Jenkins/jenTest/node_modules/statuses/README.md",
-    "Jenkins/jenTest/node_modules/statuses/HISTORY.md",
-    "Jenkins/jenTest/node_modules/side-channel-weakmap/README.md"
+    "Jenkins/jenTest/node_modules/statuses/HISTORY.md"
   ]
 }

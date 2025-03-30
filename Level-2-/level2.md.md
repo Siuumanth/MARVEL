@@ -14,11 +14,18 @@ It is the **FaaS platform of AWS**. We can define a function, upload it and AWS 
       
 2. `Attaching Integrations:` I created 3 lambda functions to manage each of the above routes, and linked them. After these steps, I got the WebSocket URL which I could then integrate with my app. 
 
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/1-socketfun.png?raw=true)
+
+
 Code for web socket:
-![umm](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level%202%20-%20CL%20-%20CY/images/1-code.png?raw=true)
+
+![umm](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/1-code.png?raw=true)
 
 
+After this, I created a simple Express JS server, that serves a simple HTML page. I then connected the script with the HTML, which was capable of testing 3 tasks, opening, olosing connection and sending a message, which worked well.
 
+
+---
 ## TASK 2: CI/CD (Continuous Integration & Continuous Delivery) - Intro to Jenkins
 
 ### CI / CD :

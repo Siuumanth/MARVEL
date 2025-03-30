@@ -133,7 +133,7 @@ document.getElementById("open-button").addEventListener("click", function(){
     }
 });
 
-//Send button
+//send button
 document.getElementById("send-button").addEventListener("click", function(){
     var message = document.getElementById("messageInput").value;
     jsonmsg = JSON.stringify({
