@@ -107,7 +107,6 @@ Once code is tested, **Continuous Delivery (CD)** ensures it is automatically de
 - Tools like **Jenkins, GitLab CI/CD, and AWS CodePipeline** automate software releases.
 - Frequent, **small releases** reduce the risk of deployment failures.
     
-
 #### **3️⃣ Infrastructure as Code (IaC) - Automating Infrastructure**
 
 Traditionally, setting up servers, databases, and networks was **manual and time-consuming**. With **Infrastructure as Code (IaC)** tools like **Terraform, AWS CloudFormation, and Ansible**, infrastructure can be **automated, versioned, and managed like code**.
@@ -119,7 +118,6 @@ Traditionally, setting up servers, databases, and networks was **manual and time
 Once deployed, applications need monitoring to ensure they run smoothly. Tools like **Prometheus, Grafana, ELK Stack, and Datadog** help track performance, detect failures, and send alerts.
 
 - Example: If a web app crashes, monitoring tools alert the team so issues can be fixed immediately.
-    
 
 #### **5️⃣ Collaboration Between Dev & Ops**
 - DevOps removes the **wall** between development and operations.

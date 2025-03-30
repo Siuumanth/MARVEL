@@ -22,27 +22,99 @@ Code for web socket:
 ![umm](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/1-code.png?raw=true)
 
 
-After this, I created a simple Express JS server, that serves a simple HTML page. I then connected the script with the HTML, which was capable of testing 3 tasks, opening, olosing connection and sending a message, which worked well.
+After this, I created a simple Express JS server, that serves a simple HTML page. I then connected the script with the HTML, which was capable of testing 3 tasks, opening, closing connection and sending a message, which worked well.
 
+![umm](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/1-webs.png?raw=true)
+
+[Github link](https://github.com/Siuumanth/MARVEL-tasks/tree/main/Level-2-/AWS/AWS-ChatApp/Chat-app)
 
 ---
-## TASK 2: CI/CD (Continuous Integration & Continuous Delivery) - Intro to Jenkins
+# TASK 2: CI/CD (Continuous Integration & Continuous Delivery) - Intro to Jenkins
 
-### CI / CD :
-CI/CD stands for **Continuous Integration and Continuous Deployment/Delivery**, a practice in software development aimed at automating the process of building, testing, and deploying code changes. 
+I first familiarized myself with the knowledge of DevOps, how it improves the software development process. I also learnt about the traditional methods like Waterfall Model, Agile model, and how DevOps can drastically increase the efficiency of a software development cycle. Then, I moved on to learning about CI/CD, a key aspect of DevOps which automates and accelerates the software development lifecycle, reducing the time required to build a product.
 
 - **Continuous Integration (CI)** ensures that whenever developers make changes to the code, these changes are automatically merged into a shared repository, built, and tested to identify issues early.
 
 - **Continuous Deployment (CD)** automates the release process, pushing changes to production automatically after passing all tests, while **Continuous Delivery** prepares the code for deployment but requires manual approval to push it live. 
 
+## CI/CD with Jenkins:
+Jenkins is an **automation platform** that allows you to **build, test, and deploy** software using pipelines. It is widely used in **Continuous Integration (CI) and Continuous Deployment (CD)** to streamline the software development process. 
 
-## TASK 4: Terraform
+I first familiarized myself with the Jenkins UI and learnt how to create and scheduling jobs, logging, running jobs, managing teams, etc.  I tested it on a simple Java application. The setup was able to pull the code from Github, and run tests to get an output and log it.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/2-sum.png?raw=true)
+
+I then went ahead and created a pipeline for testing a simple node js application. The steps were:
+- pulling code from github
+- installing dependencies
+- run tests defined in package.json (none for now)
+- run the server and make sure no error occurs.
+
+Pipeline:
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/2-jfile.png?raw=true)
+Jenkins console output:
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/2-jlogs.png?raw=true)
+
+
+[Link to code](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/Jenkins/jenTest)
+
+---
+
+# TASK 4: Terraform
 
 **Terraform** is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp, used to define, provision, and manage cloud infrastructure efficiently. It allows users to write declarative configuration files specifying the desired state of infrastructure (like servers, networks, and databases), and Terraform handles the deployment and changes.
 
-It supports multiple cloud providers like AWS, Azure, and GCP, as well as on-premises systems, making it a versatile tool for automating and maintaining consistent infrastructure across environments.
+I first learnt how to create and configure EC2 instances, DynamoDB, IGWs, routes etc. manually in AWS to get a clearer image of what processes I can automate. I then went ahead learning to learn HCL syntax, basic TF commands and create, destroy and configure an EC2 instance using terraform, which was successful.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/4-apply.png?raw=true)
+
+I then went deeper, to create a whole EC2 infrastructure that included:
+
+1. `Virtual Private Network (VPC):` to create a secure network for my application.
+2. `Internet Gateway`: to allow my VPC to send and receive traffic from the internet.
+3. `Custom route table:` to control how traffic flows within the VPC.
+4. `Subnet` which we will use.
+5. `Association of subnet to our table`
+6. `Security group`: for a firewall and to allow specific ports, 22-SSH, 80-HTTP and 443-HTTPS for connections.
+7. `Network Interface`: to create a Virtual Network Adapter.
+8. `Elastic IP`: to make sure the public IP remains same even after restart.
+9. `EC2 instance`: where I attached it to the `network interface` and wrote a script to install recent dependencies and Apache.
+
+Code snippet:
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/4-code.png?raw=true)
+[Full code](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/Terraform/main.tf)
+
+---
+
+# TASK 5: Wireshark
+
+Wireshark is a **network protocol analyzer** used for capturing, inspecting, and analyzing network traffic in real-time. It allows users to see what's happening at a deep level in a network, making it useful for troubleshooting, security analysis, and network optimization.
+
+After setting up, I ran a small Packet Capture (Pcap), where I browsed some website and recorded the packets transferred. I observed the following. I even learnt how to use basic filters to narrow out search space.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/5-tcp.png?raw=true)
+
+In this normal analysis, we can see the protocols used for each packet, and mainly the flags like `ACK, SYN, SYN-ACK`, whose observations can be crucial for hacking detection. 
 
 
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/5-http.png?raw=true)
+
+Here some HTTP transfers were made when I accessed an insecure website, and we can see how the packets sent have unencrypted HTML code, concluding that HTTP is insecure. The packets transferred over TLS are more secure because of encryption.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/5-retrans.png?raw=true)
+
+Above, I observed how many packets needed retransmission. A small amount (as shown) would show that our network is stable.
+
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/5-graph.png?raw=true)
+
+
+
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/.png?raw=true)
+
+
+---
 ## TASK 6: Docker
 
 

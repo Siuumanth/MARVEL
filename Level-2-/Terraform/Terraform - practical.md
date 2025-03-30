@@ -46,10 +46,38 @@ STEPS:
 - A **Network Interface (ENI)** is a virtual network adapter.
 - Assign it an **IP address from the subnet** to allow communication.
 
+- **Purpose:**
+    - A network interface (NIC) acts as a virtual network adapter for the instance.
+    - It allows the instance to communicate within the **private** AWS **subnet**.
+    - The **private IP (`10.0.1.50`)** ensures that the instance has a fixed internal address.
+    - The **security group** controls traffic (e.g., HTTP, SSH) to and from the instance.
+
 #### **8. Assign an Elastic IP to the Network Interface**
 - An **Elastic IP (EIP)** is a static public IP that doesn’t change.
 - It allows your server to be publicly accessible even if restarted.
-    
+
+- **Purpose:**
+    - AWS assigns **private IPs** to instances by default, but private IPs are not accessible from the **internet**.
+    - To allow internet access, we need a **public IP** → Elastic IP (EIP).
+    - The **Elastic IP** is mapped to the private IP (`10.0.1.50`) to ensure a **stable** and **publicly routable** IP.
+    - The `depends_on` ensures that the **Internet Gateway (IGW)** is available before assigning the Elastic IP.
+        
+
+### **Why is this needed?**
+
+1. **Private IP for Internal Communication**
+    - The instance needs a private IP to communicate within the **AWS VPC (Virtual Private Cloud)**.
+    - Private IPs are stable and remain assigned to the instance even if it is restarted.
+        
+2. **Elastic IP for Internet Access**
+    - AWS does not guarantee that a public IP assigned dynamically to an instance will remain the same.
+    - An **Elastic IP (EIP) is static**, meaning even if the instance is stopped or restarted, the public IP remains the same.
+    - This is essential for running **public-facing applications** (e.g., web servers, APIs).
+        
+3. **Security Group for Traffic Control**
+    - The network interface is associated with a **security group**, which defines allowed **inbound and outbound traffic**.
+    - Typically, this would allow traffic on ports **80 (HTTP), 443 (HTTPS), and 22 (SSH)**.
+
 #### **9. Create an Ubuntu Server & Install Apache2**
 - Launch an **EC2 instance** with the Ubuntu AMI.
 - Attach it to the **network interface**.

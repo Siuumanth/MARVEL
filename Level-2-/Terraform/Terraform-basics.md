@@ -107,7 +107,6 @@ A **VPC (Virtual Private Cloud)** in AWS is like your own private section of the
 - To **scale and isolate workloads** efficiently.
 
 ## Coding:
-
 We can create a VPC code from tf and send to AWS.
 
 ## Creating a VPC:

@@ -208,7 +208,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Siuumanth/jenkins-test.git'  // Change this to your repo
+                git 'https://github.com/Siuumanth/jenkins-test.git' 
             }
         }
         stage('Install Dependencies') {

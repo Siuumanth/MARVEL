@@ -101,13 +101,12 @@ resource "aws_security_group" "allow_web" {
 }
 
 
-
 # 7. Create a network interface with an IP in the subnet that was created in step 4
 resource "aws_network_interface" "web-server-nic" {
   subnet_id       = aws_subnet.subnet-1.id
   private_ips     = ["10.0.1.50"]  // any one within the subnet
   security_groups = [aws_security_group.allow_web.id]
-  # the above line is to assign the private security group to the network interface  
+  # this is to assign the private security group to the network interface  
 }
 
 # 8. Assign an elastic IP to the network interface crearted in step 7
