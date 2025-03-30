@@ -1,4 +1,7 @@
-# TASK 1: AWS Lambda
+# **Level 3 - CL - CY Report**
+
+---
+## TASK 1: AWS Lambda
 
 Since this is my first time getting into Amazon Web Services (AWS), I started my learning the fundamentals of Cloud Computing with AWS before I went ahead with this task. I first learnt about the AWS console, then gained knowledge about core services like EC2 instances, Dynamo DB, S3 buckets, etc. Next I went on to learning serverless computing with AWS lambda.
 ### **Serverless with AWS**
@@ -29,7 +32,7 @@ After this, I created a simple Express JS server, that serves a simple HTML page
 [Github link](https://github.com/Siuumanth/MARVEL-tasks/tree/main/Level-2-/AWS/AWS-ChatApp/Chat-app)
 
 ---
-# TASK 2: CI/CD (Continuous Integration & Continuous Delivery) - Intro to Jenkins
+## TASK 2: CI/CD (Continuous Integration & Continuous Delivery) - Intro to Jenkins
 
 I first familiarized myself with the knowledge of DevOps, how it improves the software development process. I also learnt about the traditional methods like Waterfall Model, Agile model, and how DevOps can drastically increase the efficiency of a software development cycle. Then, I moved on to learning about CI/CD, a key aspect of DevOps which automates and accelerates the software development lifecycle, reducing the time required to build a product.
 
@@ -37,7 +40,7 @@ I first familiarized myself with the knowledge of DevOps, how it improves the so
 
 - **Continuous Deployment (CD)** automates the release process, pushing changes to production automatically after passing all tests, while **Continuous Delivery** prepares the code for deployment but requires manual approval to push it live. 
 
-## CI/CD with Jenkins:
+### CI/CD with Jenkins:
 Jenkins is an **automation platform** that allows you to **build, test, and deploy** software using pipelines. It is widely used in **Continuous Integration (CI) and Continuous Deployment (CD)** to streamline the software development process. 
 
 I first familiarized myself with the Jenkins UI and learnt how to create and scheduling jobs, logging, running jobs, managing teams, etc.  I tested it on a simple Java application. The setup was able to pull the code from Github, and run tests to get an output and log it.
@@ -60,7 +63,7 @@ Jenkins console output:
 
 ---
 
-# TASK 4: Terraform
+## TASK 4: Terraform
 
 **Terraform** is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp, used to define, provision, and manage cloud infrastructure efficiently. It allows users to write declarative configuration files specifying the desired state of infrastructure (like servers, networks, and databases), and Terraform handles the deployment and changes.
 
@@ -86,7 +89,7 @@ Code snippet:
 
 ---
 
-# TASK 5: Wireshark
+## TASK 5: Wireshark
 
 Wireshark is a **network protocol analyzer** used for capturing, inspecting, and analyzing network traffic in real-time. It allows users to see what's happening at a deep level in a network, making it useful for troubleshooting, security analysis, and network optimization.
 
@@ -101,25 +104,36 @@ In this normal analysis, we can see the protocols used for each packet, and main
 
 Here some HTTP transfers were made when I accessed an insecure website, and we can see how the packets sent have unencrypted HTML code, concluding that HTTP is insecure. The packets transferred over TLS are more secure because of encryption.
 
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/5-graph.png?raw=true)
 ![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/5-retrans.png?raw=true)
 
-Above, I observed how many packets needed retransmission. A small amount (as shown) would show that our network is stable.
+Above, I observed how many packets needed retransmission. A small amount (as shown) would show that our network is stable. A high amount would indicate packet loss. This can help us discover network bottlenecks, performance.
 
 
-![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/5-graph.png?raw=true)
-
-
-
-
-![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/.png?raw=true)
-
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/5-rtt.png?raw=true)
+Round Trip Time (RTT) measures the time it takes for a data packet to travel from a source to a destination and back, serving as a key indicator of network latency and connection quality. Above, our graph is showing a linear decrease of RTT, which shows that out network performance increases overtime
 
 ---
 ## TASK 6: Docker
 
+Docker is a set of Platforms as a service (PaaS) products that use Operating system-level virtualization to deliver software in packages called containers. **Containers** are isolated from one another and bundle their own software, libraries, and configuration files, they can communicate with each other through well-defined channels.
+
+A **Docker image** is a lightweight, standalone package that contains everything needed to run an application, including code, runtime, libraries, and dependencies. It acts as a blueprint for creating Docker containers . Containers are the **running instances** created from those images.
+**Dockerfile** is a set of instructions containing the necessary commands for generating a docker image.
+
+For this task, I first explored the use cases of docker and how it accelerates both the deployment and development process. I then learnt the basic docker commands like `run, build, ps, start, exec, etc.` For the practical experience, then created a simple Nodejs server application and dockerized that to create its image.
+
+dockerfile:
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/6-dockerfile.png?raw=true)
+I then built the image, and ran the image. Using port mapping, I was able to host the server inside the container, and make it visible in my Windows machine.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/6-container.png?raw=true)
+
+Running the image:
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/6-running.png?raw=true)
 
 
-
+---
 ## TASK 10: NMap
 
 Nmap is a powerful network discovery tool that can be used for :

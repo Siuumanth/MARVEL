@@ -99,6 +99,12 @@ I added delta time, in preferences->columns->add delta time
 
 In statistics, TCP stream graphs, checking Round Trip Latency(RTT) can help us test our Network Communication Efficiency. In networking, Round Trip Time (RTT) measures the time it takes for a data packet to travel from a source to a destination and back, serving as a key indicator of network latency and connection quality, typically measured in milliseconds.
 
+If your **RTT graph in Wireshark is an upside-down linear trend** (decreasing over time), it means:
+
+✅ **Improving Network Performance** – Packets are reaching their destination and returning **faster over time**.  
+✅ **Reduced Congestion** – Possible **network optimization, better routing, or congestion clearing up**.  
+✅ **TCP Slow Start Ending** – If the connection initially had high RTT but stabilized, this could be due to **TCP congestion control mechanisms** adjusting.
+
 
 C. IO graphs for traffic analysis
 ![[Pasted image 20250328145801.png]]
