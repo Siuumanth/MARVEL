@@ -59,7 +59,24 @@ Jenkins console output:
 [Link to code](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/Jenkins/jenTest)
 
 ---
+## TASK 3: SSH
+SSH, or Secure Shell, is a network protocol that enables secure remote access to computers and servers, encrypting data and authentication to ensure secure communication over an unsecured network. The SSH connection works by `public key cryptography`, and is initiated by the client. Once authorized, the public key of the client is stored in the `authorized_keys` file of the server, which contains a list of public keys of machine who are authorized for SSH.
+The communication then takes place by: 
 
+For this task, I learnt how SSH works, and how keys are generated and stored in the client and server. I first verified the existence of these keys on my local machine, in the `.ssh` folder and also on an `EC2 instance on AWS.` After this I wrote a script to SSH into the EC2 server (I used the `.pem` keys for authorization since there is no other way), that finds the `authorized_keys` file inside the server, and then uploads a copy of that file to another server, that I hosted on an EC2 instance.
+
+bash script:
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/3-bash.png?raw=true)
+
+I then ran this script, which was able to complete the stated task.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/3-running.png?raw=true)
+
+
+
+
+
+---
 ## TASK 4: Terraform
 
 **Terraform** is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp, used to define, provision, and manage cloud infrastructure efficiently. It allows users to write declarative configuration files specifying the desired state of infrastructure (like servers, networks, and databases), and Terraform handles the deployment and changes.
@@ -174,9 +191,20 @@ Final `.csv` file of the scraped flight details data.
 
 ## TASK 9: Hashing
 
+Hashing is the practice of converting a string of characters, to another value for security. This is mainly done for classified details like passwords in databases. The algorithm `sha256` can be used to hash a string, in a way that the change cannot be reversed, and every particular string gives the same hashed value. 
+
+For this task I used a python's `hashlib`, and built a simple flask server, which hosted a basic login/signup page. The password would then be hashed using the `sha256` algorithm, and stored in a local database. 
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/9-login.png?raw=true)
+
+When the login details are entered, the code would then apply the same hash function on submitted password, and verify the details with the stored info.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/9-db.png?raw=true)
+
+As we can see here, all the passwords stored are hashed.
+[Github](https://github.com/Siuumanth/MARVEL-tasks/tree/main/Level-2-/hashing)
 
 ---
-
 ## TASK 10: NMap
 
 Nmap is a powerful network discovery tool that can be used for :
