@@ -137,16 +137,46 @@ Spyware is a type of malicious software designed to secretly monitor and collect
 Docker can be used to containerize the spyware code and bypass security restrictions while operating in a sandboxed environment.
 
 I first wrote a simple spyware code in python that monitors a folder for any new files, and coded a simple flask server where I can upload files as `POST` requests, which takes the files and stores it in a local folder.
-![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/7-spycode.png?raw=true)
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/7-code2.png?raw=true)
+
 To enable remote access, I decided to enhance my skills and host the server on an EC2 instance. For this I created one, using SSH I gained access into the machine and created my server files there, and hosted it.
 
 I then containerized my spyware code, using a python image.
 ![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/7-dfile.png?raw=true)
+Finally, I built an image and ran a container, where I used file mounting to monitor a folder outside of the container, i.e, a windows folder, and I was successfully able to monitor the folder and upload the files to my EC2 machine.
 
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/7-working.png?raw=true)
 
+[Github link](https://github.com/Siuumanth/MARVEL-tasks/tree/main/Level-2-/Docker-spy/Spyware)
+
+---
+
+## TASK 8: Web Scraping and Automation
+
+Selenium is an **open-source framework** for automating web browsers. It is primarily used for **automated testing** of web applications, but it can also be used for tasks like web scraping and browser automation. Selenium works by sending commands to a web browser, instructing it to perform tasks like clicking a button, entering text in a form, or navigating through a page.
+
+For this task, I ran tests in 2 websites, `expedia and skyscanner`, which didn't work too well. Then, I tried on `Google flights`, which after hours of testing, seemed perfect, because of its easy UI.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/8-WIP.png?raw=true)
+
+Identifying the proper IDs of elements in the website, was a hassle, and I faced issues even if i got the correct ID. I finally figured out a way and was able to automate the navigation and scraping.
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/8-final.png?raw=true)
+
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/8-table.png?raw=true)
+
+Final `.csv` file of the scraped flight details data.
+
+[Github Link](https://github.com/Siuumanth/MARVEL-tasks/tree/main/Level-2-/Selenium/practical)
+
+---
+
+## TASK 9: Hashing
 
 
 ---
+
 ## TASK 10: NMap
 
 Nmap is a powerful network discovery tool that can be used for :

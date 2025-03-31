@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker-spy/intro.md",
+                "file": "Selenium/Basics-selenium.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "intro"
+              "title": "Basics-selenium"
             }
           }
         ],
@@ -45,6 +45,7 @@
           {
             "id": "3bfe79376f9d67a0",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -52,6 +53,7 @@
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
               "title": "level2.md"
             }
@@ -200,8 +202,12 @@
   },
   "active": "3bfe79376f9d67a0",
   "lastOpenFiles": [
-    "images/7-code2.png",
+    "images/9-code.png",
     "images/image.png",
+    "Selenium/Basics-selenium.md",
+    "level2.md.md",
+    "Pasted image 20250331145321.png",
+    "images/7-code2.png",
     "Docker-spy/Spyware/me pic new.jpeg",
     "Docker-spy/Spyware/imgs/me pic new.jpeg",
     "Docker-spy/Spyware/My Resume.jpg",
@@ -209,7 +215,6 @@
     "Docker-spy/Spyware/imgs",
     "Docker-spy/Spyware/spycode.py",
     "Docker-spy/intro.md",
-    "level2.md.md",
     "Docker/Practical-docker.md",
     "Docker/Theory - docker.md",
     "WireShark/Wireshark-Intro.md",
@@ -229,8 +234,6 @@
     "AWS/AWS-lambda/AWS-intro.md",
     "AWS/AWS-basics/AWS-basics.md",
     "images/10-scanme.png",
-    "images/10-ports.png",
-    "images/10-normal_scan.png",
     "SSH/SSH-task.md",
     "Docker-spy/Spyware/hi.txt",
     "SSH/Theory-SSH.md",
@@ -244,7 +247,6 @@
     "Jenkins/jenTest/node_modules/vary/HISTORY.md",
     "Jenkins/jenTest/node_modules/utils-merge/README.md",
     "Jenkins/jenTest/node_modules/unpipe/README.md",
-    "Jenkins/jenTest/node_modules/unpipe/HISTORY.md",
-    "Jenkins/jenTest/node_modules/type-is/README.md"
+    "Jenkins/jenTest/node_modules/unpipe/HISTORY.md"
   ]
 }

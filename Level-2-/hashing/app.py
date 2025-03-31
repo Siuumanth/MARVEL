@@ -5,7 +5,7 @@ import hashlib
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.secret_key = 'your_secret_key'  
+app.secret_key = 'my_secret_key'  
 
 db = SQLAlchemy(app)
 
@@ -17,6 +17,7 @@ class User(db.Model):
 
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
+# the method returns a hash object, not the actual hash value, so we need hexdigeest
 
 def check_password(stored_hash, password):
     return stored_hash == hash_password(password)
@@ -27,20 +28,16 @@ def signup():
         username = request.form.get('username')
         password = request.form.get('password')
 
-        if not username or not password:
-            flash("Both username and password are required", "error")
-            return redirect(url_for('signup'))
-
         if User.query.filter_by(username=username).first():
-            flash("Username already exists", "error")
+            flash("username already exists", "error")
             return redirect(url_for('signup'))
 
-        hashed_password = hash_password(password)
-        new_user = User(username=username, password_hash=hashed_password)
+        hashed = hash_password(password)
+        new_user = User(username=username, password_hash=hashed)
         db.session.add(new_user)
         db.session.commit()
 
-        flash("User signed up successfully!", "success")
+        flash("user signed up successfully", "success")
         return redirect(url_for('login'))
 
     return render_template('signup.html')
@@ -71,4 +68,5 @@ def dashboard():
     return "Welcome to your dashboard!"
 
 if __name__ == '__main__':
+    print('The main method ran ')
     app.run(debug=True)
