@@ -3,12 +3,12 @@ import os
 
 app = Flask(__name__)
 UPLOAD_FOLDER = "D:/code/marvel/Level 2 - CL - CY/Docker-spy/folder"
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)  
+#os.makedirs(UPLOAD_FOLDER, exist_ok=True)  
 
 @app.route('/upload', methods=['POST'])
 def upload():
     file = request.files['file']
-    file.save(os.path.join(UPLOAD_FOLDER, file.filename))
+   # file.save(os.path.join(UPLOAD_FOLDER, file.filename))
     return f"File {file.filename} uploaded successfully!", 200
 
 if __name__ == '__main__':

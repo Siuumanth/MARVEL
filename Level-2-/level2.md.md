@@ -5,8 +5,7 @@
 
 Since this is my first time getting into Amazon Web Services (AWS), I started my learning the fundamentals of Cloud Computing with AWS before I went ahead with this task. I first learnt about the AWS console, then gained knowledge about core services like EC2 instances, Dynamo DB, S3 buckets, etc. Next I went on to learning serverless computing with AWS lambda.
 ### **Serverless with AWS**
-It sounds like there are no servers, but it just means that you don't have to **manage servers**—AWS, GCP or any cloud service will handle them for us. We just write our code normally and it runs **only when it is needed**, responding to events. AWS automatically manages the infrastructure, scaling, and execution of our defined functions in response to triggers.
-**FaaS or Function as a Service**  is a part of serverless architecture. It is a way to achieve it, by breaking our apps into small, independent functions, that run only when triggered. We pay only when we use it.
+It sounds like there are no servers, but it just means that you don't have to **manage servers**—AWS, GCP or any cloud service will handle them for us. We just write our code normally and it runs **only when it is needed**. **FaaS or Function as a Service**  is a part of serverless architecture. It is a way to achieve it, by breaking our apps into small, independent functions, that run only when triggered. 
 ### **AWS Lambda**
 It is the **FaaS platform of AWS**. We can define a function, upload it and AWS runs when its triggered. To get started, I followed the AWS' official tutorial on creating a simple "Hello World" function for testing. Next, I went ahead creating the Chat App.
 
@@ -24,8 +23,6 @@ Code for web socket:
 
 ![umm](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/1-code.png?raw=true)
 
-
-After this, I created a simple Express JS server, that serves a simple HTML page. I then connected the script with the HTML, which was capable of testing 3 tasks, opening, closing connection and sending a message, which worked well.
 
 ![umm](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/1-webs.png?raw=true)
 
@@ -131,6 +128,22 @@ I then built the image, and ran the image. Using port mapping, I was able to hos
 
 Running the image:
 ![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/6-running.png?raw=true)
+
+---
+
+## TASK 7: Docker File Spyware
+
+Spyware is a type of malicious software designed to secretly monitor and collect information from a system without the user's consent. It can track activities, steal sensitive data, or send collected information to a remote server. 
+Docker can be used to containerize the spyware code and bypass security restrictions while operating in a sandboxed environment.
+
+I first wrote a simple spyware code in python that monitors a folder for any new files, and coded a simple flask server where I can upload files as `POST` requests, which takes the files and stores it in a local folder.
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/7-spycode.png?raw=true)
+To enable remote access, I decided to enhance my skills and host the server on an EC2 instance. For this I created one, using SSH I gained access into the machine and created my server files there, and hosted it.
+
+I then containerized my spyware code, using a python image.
+![](https://github.com/Siuumanth/MARVEL-tasks/blob/main/Level-2-/images/7-dfile.png?raw=true)
+
+
 
 
 ---
