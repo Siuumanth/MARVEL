@@ -195,6 +195,8 @@
   },
   "active": "648331ec2d76a799",
   "lastOpenFiles": [
+    "images/10-scanme.png",
+    "images/Screenshot 2025-04-01 015437.png",
     "Nmap/Task.md",
     "Nmap/commands.md",
     "Nmap/Nmap.md",
@@ -213,7 +215,6 @@
     "Selenium/Basics-selenium.md",
     "Pasted image 20250331145321.png",
     "images/7-code2.png",
-    "Docker-spy/Spyware/me pic new.jpeg",
     "Docker-spy/Spyware/imgs",
     "Docker-spy/Spyware/spycode.py",
     "Docker-spy/intro.md",
@@ -239,7 +240,6 @@
     "Jenkins/jenTest/node_modules/send/node_modules/ms/readme.md",
     "Jenkins/jenTest/node_modules/send/node_modules/ms/license.md",
     "Jenkins/jenTest/node_modules/send/node_modules/encodeurl/README.md",
-    "Jenkins/jenTest/node_modules/send/node_modules/encodeurl/HISTORY.md",
-    "Jenkins/jenTest/node_modules/vary/README.md"
+    "Jenkins/jenTest/node_modules/send/node_modules/encodeurl/HISTORY.md"
   ]
 }

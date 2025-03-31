@@ -208,8 +208,16 @@ Nmap is a powerful network discovery tool that can be used for :
 - information on targets, including reverse DNS
 - identifying device types and MAC addresses.
 
-I first learnt about how SYN scans work, and the various options in the NMAP commands like `-sS , -sP , -A , -Pn , -iL , -6 , -sn , -p and more`. I was facing issues with using NMAP, which I was able to resolve by changing the network settings in Virtual Box from `NAT` to `Bridged Adapter` . I ran NMAP on my network. I was able to identify all the devices that was connected to my network, and also on another website specifically made for pentesting.
+I first learnt about how SYN scans work, and the various options in the NMAP commands like `-sS , -sP , -A , -Pn , -iL , -6 , -sn , -p and more`. I then moved on to analysis.
 
+![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/10-all.png?raw=true)
+
+![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/10-ports.png?raw=true)
+#### Conclusions:
+My network had 6 devices connected to it, which were responsive when a ran an `agressive scan`. I recorded the observations and concluded that:
+1. In a SYN scan, some devices had firewall enables, and Nmap was not able to bypass that to get the required information.
+2. My router had some services running like Telnet, DNS, HTTPS. Telnet would mean my router is outdated, and is a potential vulnerability.
+3. It also had an expired SSL certificate (2009) which might make it vulnerable to brute force attacks.
 
 I saw resources on how we can find vulnerabilities when we get an NMAP result, identifying the different types of ports, and basics on how we can exploit those vulnerabilities, like SSH or FTP, but I was not able to fully exploit them.
 
