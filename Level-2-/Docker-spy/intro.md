@@ -364,7 +364,7 @@ docker build -t spyware-py .
 Tocontainer:
 
 ```bash
-docker run --name spyware-py -v /mnt/c/Users/gsuma/OneDrive/Desktop/imgs:/app/imgs spyware-py
+docker run --name <container_name> -v /mnt/c/Users/gsuma/OneDrive/Desktop/imgs:/app/imgs spyware-py
 ```
 
 This command **creates and runs** a new Docker container from the `spyware-py` image, while **mounting** your Windows folder (`C:/Users/gsuma/OneDrive/Desktop/imgs`) into the container at `/app/imgs`. This allows your `spyware.py` script (running inside the container) to detect and upload new images added to the folder on your Windows machine.

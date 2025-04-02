@@ -1,6 +1,4 @@
-# **Level 3 - CL - CY Report**
 
----
 ## TASK 1: AWS Lambda
 
 I began this task by exploring the fundamentals of **Cloud Computing with AWS**. I first learnt about the AWS console, then gained knowledge about core services like EC2 instances, Dynamo DB, S3 buckets, etc. Next I went on to serverless computing with AWS lambda.
@@ -44,10 +42,10 @@ I first familiarized myself with the Jenkins UI and learnt how to `create and sc
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/2-sum.png?raw=true)
 
 I then went ahead and created a pipeline for testing a simple node js application. The steps were:
-- pulling code from github
+- pulling code from Github
 - installing dependencies
-- run tests defined in package.json (none for now)
-- run the server and make sure no error occurs.
+- run tests defined in package.json 
+- run the server 
 
 Pipeline:
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/2-jfile.png?raw=true)
@@ -60,9 +58,8 @@ Jenkins console output:
 ---
 ## TASK 3: SSH
 SSH, or Secure Shell, is a network protocol that enables secure remote access to computers and servers, encrypting data and authentication to ensure secure communication over an unsecured network. The SSH connection works by `public key cryptography`, and is initiated by the client. Once authorized, the public key of the client is stored in the `authorized_keys` file of the server, which contains a list of public keys of machine who are authorized for SSH.
-The communication then takes place by: 
 
-For this task, I learnt how SSH works, and how keys are generated and stored in the client and server. I first verified the existence of these keys on my local machine, in the `.ssh` folder and also on an `EC2 instance on AWS.` After this I wrote a script to SSH into the EC2 server (I used the `.pem` keys for authorization since there is no other way), that finds the `authorized_keys` file inside the server, and then uploads a copy of that file to another flask server, that I hosted on an EC2 instance.
+For this task, I learnt how SSH works, and how keys are generated and stored in the client and server. I first verified the existence of these keys on my local machine, in the `.ssh` folder and also on an `EC2 instance on AWS.` After this I wrote a script to SSH into the EC2 server, that finds the `authorized_keys` inside the server, and then uploads a copy of that file to another flask server, that I hosted on an EC2 instance.
 
 bash script:
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/3-bash2.png?raw=true)
@@ -82,15 +79,15 @@ I first learnt how to create and configure EC2 instances, DynamoDB, IGWs, routes
 
 I then went deeper, to create a whole EC2 infrastructure that included:
 
-1. `Virtual Private Network (VPC):` to create a secure network for my application.
-2. `Internet Gateway`: to allow my VPC to send and receive traffic from the internet.
+1. `Virtual Private Network (VPC):` as a secure network for my application.
+2. `Internet Gateway`: to allow my VPC to send and receive internet traffic.
 3. `Custom route table:` to control how traffic flows within the VPC.
 4. `Subnet` which we will use.
 5. `Association of subnet to our table`
 6. `Security group`: for a firewall and to allow specific ports, 22-SSH, 80-HTTP and 443-HTTPS for connections.
 7. `Network Interface`: to create a Virtual Network Adapter.
 8. `Elastic IP`: to make sure the public IP remains same even after restart.
-9. `EC2 instance`: where I attached it to the `network interface` and wrote a script to install recent dependencies and Apache.
+9. `EC2 instance`: I attached it to the `network interface` and wrote a script to install dependencies.
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/4-code.png?raw=true)
 [Full code](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/Terraform/main.tf)
@@ -115,7 +112,7 @@ Here, some HTTP transfers were made when I accessed an insecure website. We can 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/5-graph.png?raw=true)
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/5-retrans.png?raw=true)
 
-Above, I observed retransmission data. A small amount (as shown) would show that our network is stable. A high amount would indicate packet loss. This can help us discover network bottlenecks, performance.
+Above, I observed retransmission data. A small amount (as shown) would show that our network is stable. A high amount would indicate packet loss. 
 
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/5-rtt.png?raw=true)
@@ -124,10 +121,9 @@ Round Trip Time (RTT) measures the time it takes for a data packet to travel fr
 ---
 ## TASK 6: Docker
 
-Docker is a set of Platforms as a service (PaaS) products that use Operating system-level virtualization to deliver software in packages called containers. **Containers** are isolated from one another and bundle their own software, libraries, and configuration files, they can communicate with each other through well-defined channels.
+Docker is a tool that use Operating system-level virtualization to deliver software in packages called containers. **Containers** are isolated from one another and bundle their own software, libraries, and configuration files, they can communicate with each other through well-defined channels.
 
-A **Docker image** is a lightweight, standalone package that contains everything needed to run an application, including code, runtime, libraries, and dependencies. It acts as a blueprint for creating Docker containers . Containers are the **running instances** created from those images.
-**Dockerfile** is a set of instructions containing the necessary commands for generating a docker image.
+A **Docker image** is a lightweight, standalone package that contains everything needed to run an application, including code, runtime, libraries, and dependencies. It acts as a blueprint for creating Docker containers. **Dockerfile** is a set of instructions containing the necessary commands for generating a docker image.
 
 For this task, I first explored the use cases of docker and how it accelerates both the deployment and development process. I then learnt the basic docker commands like `run, build, ps, start, exec, etc.` For the practical experience, then created a simple Nodejs server application and dockerized that to create its image.
 
@@ -144,8 +140,7 @@ Running the image:
 
 ## TASK 7: Docker File Spyware
 
-Spyware is a type of malicious software designed to secretly monitor and collect information from a system without the user's consent. It can track activities, steal sensitive data, or send collected information to a remote server. 
-Docker can be used to containerize the spyware code and bypass security restrictions while operating in a sandboxed environment.
+Spyware is a type of malicious software designed to secretly monitor and collect information from a system without the user's consent. It can track activities, steal sensitive data, or send collected information to a remote server.  Docker can be used to containerize the spyware code and bypass security restrictions while operating in a sandboxed environment.
 
 I first wrote a simple spyware code in python that monitors a folder for any new files, and coded a simple flask server where I can upload files as `POST` requests, which takes the files and stores it in a local folder.
 
@@ -165,7 +160,7 @@ Finally, I built an image and ran a container, where I used file mounting to mon
 
 ## TASK 8: Web Scraping and Automation
 
-Selenium is an **open-source framework** for automating web browsers. It is primarily used for **automated testing** of web applications, but it can also be used for tasks like web scraping and browser automation. Selenium works by sending commands to a web browser, instructing it to perform tasks like clicking a button, entering text in a form, or navigating through a page.
+Selenium is a tool used for **automated testing** of web applications, but it can also be used for tasks like web scraping and browser automation. Selenium works by sending commands to a web browser, instructing it to perform tasks like clicking a button, entering text in a form, or navigating through a page.
 
 For this task, I ran tests in 2 websites, `expedia and skyscanner`, which didn't work too well. Then, I tried on `Google flights`, which after hours of testing, seemed perfect, because of its easy UI.
 
@@ -176,8 +171,6 @@ Identifying the proper IDs of elements in the website, was a hassle, and I faced
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/8-final.png?raw=true)
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/8-table.png?raw=true)
-
-Final `.csv` file of the scraped flight details data.
 
 [Github Link](https://github.com/Siuumanth/MARVEL/tree/main/Level-2-/Selenium/practical)
 
@@ -208,32 +201,26 @@ Nmap is a powerful network discovery tool that can be used for :
 - information on targets, including reverse DNS
 - identifying device types and MAC addresses.
 
-I first learnt about how SYN scans work, and the various options in the NMAP commands like `-sS , -sP , -A , -Pn , -iL , -6 , -sn , -p and more`. I then moved on to analysis.
+I first learnt about how SYN scans work, and the various options in the NMAP commands and flags like `-sS , -sP , -A , -Pn , -iL , -6 , -sn , -p and more`. I then moved on to analysis.
 
+Identifying devices:
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/10-all.png?raw=true)
-
-![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/10-ports.png?raw=true)
 #### Conclusions:
-My network had 6 devices connected to it, which were responsive when a ran an `agressive scan`. I recorded the observations and concluded that:
+My network had 6 devices connected to it, which were responsive when I ran an `agressive scan`, I recorded the observations:
 1. In a SYN scan, some devices had firewall enables, and Nmap was not able to bypass that to get the required information.
-2. My router had some services running like Telnet, DNS, HTTPS. Telnet would mean my router is outdated, and is a potential vulnerability.
-3. It also had an expired SSL certificate (2009) which might make it vulnerable to brute force attacks.
-
-I saw resources on how we can find vulnerabilities when we get an NMAP result, identifying the different types of ports, and basics on how we can exploit those vulnerabilities, like SSH or FTP, but I was not able to fully exploit them.
-
-Identifying devices :
-
-![alt](https://github.com/Siuumanth/MARVEL-/blob/main/Images/6-normal_scan.png?raw=true)
-
-Identifying Ports :
-
-![alt](https://github.com/Siuumanth/MARVEL-/blob/main/Images/6-ports.png?raw=true)
+2. My router had some services running like Telnet, DNS, HTTPS. 
+3. It also had an expired SSL certificate which might make it vulnerable to brute force attacks.
 
 Scanning a website [scanme.org]
-  
-![alt](https://github.com/Siuumanth/MARVEL-/blob/main/Images/6-scanme.png?raw=true)
 
+![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/10-scanme.png?raw=true)
 
+Here, we can see:
+1. DNS in action.
+2. OpenSSH running on Ubuntu, and its versions which can be exploited.
+3. Web server with an open insecure HTTP port. The version is older, which can make it vulnerable.
 
-
+I even scanned my AWS EC2 instance, where I was able to verify the OS running and ports enabled.
 <br>
+
+---

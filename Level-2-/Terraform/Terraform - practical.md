@@ -150,7 +150,7 @@ resource "aws_vpc" "prod-vpc" {
 # 2. Create Internet Gateway to send data to internet publicly
 resource "aws_internet_gateway" "IGW" {
   vpc_id = aws_vpc.prod-vpc.id
-}
+};
   
 
 # 3. Create Custom Route Table
