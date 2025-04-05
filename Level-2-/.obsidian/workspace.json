@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/Practical-docker.md",
+                "file": "Chat-app/Chat maadi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Practical-docker"
+              "title": "Chat maadi"
             }
           }
         ],
@@ -194,8 +194,24 @@
   },
   "active": "47007fe6ec9d9c5b",
   "lastOpenFiles": [
-    "Docker-spy/intro.md",
+    "Chat-app/node_modules/mute-stream/package.json",
+    "Chat-app/node_modules/read/package.json",
+    "Chat-app/node_modules/commander/index.js",
+    "Chat-app/node_modules/commander/package.json",
+    "Chat-app/node_modules/agent-base/package.json",
+    "Chat-app/node_modules/debug/package.json",
+    "Chat-app/node_modules/https-proxy-agent/package.json",
+    "Chat-app/node_modules/ws/index.js",
+    "Chat-app/node_modules/wscat/package.json",
+    "Chat-app/node_modules/wscat/bin/wscat",
+    "Chat-app/node_modules/wscat/bin",
+    "Chat-app/node_modules/ws/README.md",
+    "AWS/Untitled.md",
     "Docker/Practical-docker.md",
+    "Chat-app/Chat maadi.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Docker-spy/intro.md",
     "Docker/Theory - docker.md",
     "Docker-spy/Spyware/My Resume.jpg",
     "Jenkins/INTRO.md",
@@ -221,23 +237,8 @@
     "images/image.png",
     "SSH/SSH-task.md",
     "images/9-code.png",
-    "Docker-spy/Spyware/imgs",
-    "Docker-spy/Spyware/spycode.py",
     "().md",
     "AWS/AWS-lambda/AWS-chatApp.md",
-    "AWS/AWS-ChatApp/Chat-app/server.js",
-    "AWS/AWS-ChatApp/Chat-app/index.html",
-    "AWS/AWS-ChatApp/Chat-app/node_modules/index.html",
-    "AWS/AWS-ChatApp/Chat-app/chat.js",
-    "AWS/AWS-ChatApp/Chat-app/chat.jjs",
-    "AWS/AWS-lambda/AWS-intro.md",
-    "AWS/AWS-basics/AWS-basics.md",
-    "Docker-spy/Spyware/hi.txt",
-    "Docker-spy/Spyware/requirements.txt",
-    "Docker-spy/Spyware/Dockerfile",
-    "Jenkins/jenTest/node_modules/send/node_modules/ms/readme.md",
-    "Jenkins/jenTest/node_modules/send/node_modules/ms/license.md",
-    "Jenkins/jenTest/node_modules/send/node_modules/encodeurl/README.md",
-    "Jenkins/jenTest/node_modules/send/node_modules/encodeurl/HISTORY.md"
+    "AWS/AWS-lambda/AWS-intro.md"
   ]
 }
