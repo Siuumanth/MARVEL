@@ -1,23 +1,29 @@
-
 ## TASK 1: AWS Lambda
 
-I began this task by exploring the fundamentals of **Cloud Computing with AWS**. I first learnt about the AWS console, then gained knowledge about core services like EC2 instances, Dynamo DB, S3 buckets, etc. Next I went on to serverless computing with AWS lambda.
-### **Serverless with AWS**
-It sounds like there are no servers, but it just means that we don't have to **manage servers**—AWS or any cloud service will handle them for us. We just write our code normally and it runs **only when it is needed**. **FaaS or Function as a Service**  is a part of serverless architecture. It is a way to achieve it, by breaking our apps into small, independent functions, that run only when triggered. 
-### **AWS Lambda**
-It is the **FaaS platform of AWS**. We can define a function, upload it and AWS runs when its triggered. To get started, I followed the AWS' official tutorial on creating a simple "Hello World" function for testing. Next, I went ahead creating the Chat App.
+I began by exploring the fundamentals of **Cloud Computing with AWS**. I first learnt about the AWS console, then gained knowledge about core services like EC2 instances, Dynamo DB, S3 buckets, etc. Next I went on to serverless computing with AWS lambda.
+<br />
+### Serverless with AWS
+It sounds like there are no servers, but it just means that we don't have to **manage servers**—AWS or any cloud service will handle them for us. We just write our code normally and it runs only when it is needed. **FaaS or Function as a Service**  is a part of serverless architecture. It is a way to achieve it, by breaking our apps into small, independent functions, that run only when triggered. 
 
-1. `API Gateway`: First, I created an API gateway for Web Sockets Management, for realtime communication. For the route selection expressions, I chose the 3 basic ones which handle:
-      - `$connect route`: client connection 
-      - `$disconnect route`: disconnection
-      -  `$default route`: message sharing
+### Chat app using AWS Lambda
+
+1. `API Gateway`: First, I created an API gateway for Web Sockets Management, for realtime communication. For the route selection expressions, I wrote 6 which handle:
+      - `$connect`: client connection 
+      - `$disconnect `: disconnection
+      -  `$default`:
+      - `setName`: to set your name 
+      - `sendPublic`: to send a public message
+      - `sendPrivate`: to send a private message
       
-2. `Attaching Integrations:` I created 3 lambda functions to manage each of the above routes, and linked them. After these steps, I got the WebSocket URL which I could then integrate with my app. 
-
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/1-socketfun.png?raw=true)
+  
+      
+2. `Attaching Integrations:` I created a single lambda function which would manage each of the routes using switch case. I wrote the backend code for the chatApp.
 
 
-Code for web socket:
+
+
+Web socket code:
 
 ![umm](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/1-code.png?raw=true)
 
@@ -26,16 +32,22 @@ Code for web socket:
 
 [Github link](https://github.com/Siuumanth/MARVEL/tree/main/Level-2-/AWS/AWS-ChatApp/Chat-app)
 
----
-## TASK 2: CI/CD (Continuous Integration & Continuous Delivery) - Intro to Jenkins
+<br />
 
-I first familiarized myself with the knowledge of DevOps, how it improves the software development process. I also learnt about the traditional methods like Waterfall, Agile model, and how DevOps can drastically increase the efficiency of a software development cycle. Then, I moved on to learning about CI/CD, a key aspect of DevOps.
+---
+
+
+<br />
+
+## TASK 2: CI/CD (Continuous Integration &amp; Continuous Delivery) - Jenkins
+
+I first familiarized myself with the knowledge of DevOps, how it improves the software development process. I also learnt about the traditional methods like Waterfall, Agile model, and how DevOps can drastically increase the efficiency of a software development cycle. Then, I moved on to CI/CD:
 
 - **Continuous Integration (CI)** ensures that whenever developers make changes to the code, these changes are automatically merged into a shared repository, built, and tested to identify issues early.
 
 - **Continuous Deployment (CD)** automates the release process, pushing changes to production automatically after passing all tests, while **Continuous Delivery** prepares the code for deployment but requires manual approval to push it live. 
 ### CI/CD with Jenkins:
-Jenkins is an **automation platform** that allows you to **build, test, and deploy** software using pipelines. It is widely used in **CI/CD** to streamline the software development process. 
+Jenkins is an automation platform that allows you to **build, test, and deploy** software using pipelines. It is widely used in CI/CD to streamline the software development process. 
 
 I first familiarized myself with the Jenkins UI and learnt how to `create and scheduling jobs, logging, running jobs, managing teams, etc.`  I tested it on a simple Java application. The setup was able to pull the code from Github, and run tests to get an output and log it.
 
@@ -54,25 +66,37 @@ Jenkins console output:
 
 
 [Link to code](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/Jenkins/jenTest)
+<br />
 
 ---
+
+
+<br />
+
 ## TASK 3: SSH
 SSH, or Secure Shell, is a network protocol that enables secure remote access to computers and servers, encrypting data and authentication to ensure secure communication over an unsecured network. The SSH connection works by `public key cryptography`, and is initiated by the client. Once authorized, the public key of the client is stored in the `authorized_keys` file of the server, which contains a list of public keys of machine who are authorized for SSH.
-
-For this task, I learnt how SSH works, and how keys are generated and stored in the client and server. I first verified the existence of these keys on my local machine, in the `.ssh` folder and also on an `EC2 instance on AWS.` After this I wrote a script to SSH into the EC2 server, that finds the `authorized_keys` inside the server, and then uploads a copy of that file to another flask server, that I hosted on an EC2 instance.
+<br />
+<br />
+For this task, I learnt how SSH works, and how keys are generated and stored in the client and server. I first verified the existence of these keys on my local machine, in the `.ssh` folder and also on an `EC2 instance on AWS.` After this I wrote a script to SSH into the EC2 server, that finds the `authorized_keys` inside the server, and then uploads a copy to the flask server, that I hosted on an EC2 instance.
 
 bash script:
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/3-bash2.png?raw=true)
 
-I then ran this script, which was able to complete the stated task.
+With this script, which was able to complete the task.
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/3-running.png?raw=true)
+<br />
 
 ---
+
+
+<br />
+
 ## TASK 4: Terraform
 
-**Terraform** is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp, used to define, provision, and manage cloud infrastructure efficiently. It allows users to write declarative configuration files specifying the desired state of infrastructure, and Terraform handles the deployment and changes.
-
+**Terraform** is an open-source Infrastructure as Code (IaC) tool, used to define, provision, and manage cloud infrastructure efficiently. It allows users to write declarative configuration files specifying the desired state of infrastructure, and Terraform handles the deployment and changes.
+<br />
+<br />
 I first learnt how to create and configure EC2 instances, DynamoDB, IGWs, routes etc. manually in AWS to get a clearer image of what processes I can automate. I then went ahead learning to learn HCL syntax, basic TF commands and `create, destroy and configure an EC2 instance using terraform`, which was successful.
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/4-apply.png?raw=true)
@@ -91,14 +115,18 @@ I then went deeper, to create a whole EC2 infrastructure that included:
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/4-code.png?raw=true)
 [Full code](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/Terraform/main.tf)
+<br />
 
 ---
+
+
+<br />
 
 ## TASK 5: Wireshark
 
 Wireshark is a **network protocol analyzer** used for capturing, inspecting, and analyzing network traffic in real-time. It allows users to see what's happening at a deep level in a network, making it useful for troubleshooting, security analysis, and network optimization.
-
-After setting up, I ran a small Packet Capture (Pcap), where I browsed some websites and recorded the packets transferred. I observed the following. I even learnt how to use basic filters to narrow out search space.
+<br />
+After setting up, I ran a small Packet Capture (Pcap), where I browsed some websites and recorded the packets transferred. I observed the following. 
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/5-tcp.png?raw=true)
 
@@ -114,17 +142,23 @@ Here, some HTTP transfers were made when I accessed an insecure website. We can 
 
 Above, I observed retransmission data. A small amount (as shown) would show that our network is stable. A high amount would indicate packet loss. 
 
-
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/5-rtt.png?raw=true)
+
 Round Trip Time (RTT) measures the time it takes for a data packet to travel from a source to a destination and back. Above, our graph is showing a linear decrease of RTT, which shows that our network performance increases overtime
 
+<br />
+
 ---
+
+
+<br />
+
 ## TASK 6: Docker
 
-Docker is a tool that use Operating system-level virtualization to deliver software in packages called containers. **Containers** are isolated from one another and bundle their own software, libraries, and configuration files, they can communicate with each other through well-defined channels.
-
-A **Docker image** is a lightweight, standalone package that contains everything needed to run an application, including code, runtime, libraries, and dependencies. It acts as a blueprint for creating Docker containers. **Dockerfile** is a set of instructions containing the necessary commands for generating a docker image.
-
+Docker is a tool that use Operating system-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files, they can communicate with each other through well-defined channels.
+<br />
+A **Docker image** is a lightweight, standalone package that contains everything needed to run an application, including code, runtime, libraries, and dependencies. It acts as a blueprint for creating Docker containers. **Dockerfile** is a set of instructions containing the commands for generating a docker image.
+<br />
 For this task, I first explored the use cases of docker and how it accelerates both the deployment and development process. I then learnt the basic docker commands like `run, build, ps, start, exec, etc.` For the practical experience, then created a simple Nodejs server application and dockerized that to create its image.
 
 dockerfile:
@@ -133,16 +167,21 @@ I then built the image, and ran the image. Using port mapping, I was able to hos
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/6-container.png?raw=true)
 
-Running the image:
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/6-running.png?raw=true)
 
+<br />
+
 ---
+
+
+<br />
+
 
 ## TASK 7: Docker File Spyware
 
 Spyware is a type of malicious software designed to secretly monitor and collect information from a system without the user's consent. It can track activities, steal sensitive data, or send collected information to a remote server.  Docker can be used to containerize the spyware code and bypass security restrictions while operating in a sandboxed environment.
 
-I first wrote a simple spyware code in python that monitors a folder for any new files, and coded a simple flask server where I can upload files as `POST` requests, which takes the files and stores it in a local folder.
+I first wrote a simple spyware code in python that monitors a folder for any new files, and coded a simple flask server where I can upload files as POST requests, which accepts the files and stores it in a local folder.
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/7-code2.png?raw=true)
 
@@ -155,8 +194,12 @@ Finally, I built an image and ran a container, where I used file mounting to mon
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/7-working.png?raw=true)
 
 [Github link](https://github.com/Siuumanth/MARVEL/tree/main/Level-2-/Docker-spy/Spyware)
+<br />
 
 ---
+
+
+<br />
 
 ## TASK 8: Web Scraping and Automation
 
@@ -166,20 +209,24 @@ For this task, I ran tests in 2 websites, `expedia and skyscanner`, which didn't
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/8-WIP.png?raw=true)
 
-Identifying the proper IDs of elements in the website, was a hassle, and I faced issues even if i got the correct ID. I finally figured out a way and was able to automate the navigation and scraping.
+Identifying the proper IDs of elements was a hassle. I faced issues even if I had the correct ID. I finally figured out a way and was able to automate the navigation and scraping.
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/8-final.png?raw=true)
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/8-table.png?raw=true)
 
 [Github Link](https://github.com/Siuumanth/MARVEL/tree/main/Level-2-/Selenium/practical)
+<br />
 
 ---
+
+
+<br />
 
 ## TASK 9: Hashing
 
 Hashing is the practice of converting a string of characters, to another value for security. This is mainly done for classified details like passwords in databases. The algorithm `sha256` can be used to hash a string, in a way that the change cannot be reversed, and every particular string gives the same hashed value. 
-
+<br /><br />
 For this task I used a python's `hashlib`, and built a simple flask server, which hosted a basic login/signup page. The password would then be hashed using the `sha256` algorithm, and stored in a local database. 
 
 ![](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/9-login.png?raw=true)
@@ -190,8 +237,13 @@ When the login details are entered, the code would then apply the same hash func
 
 As we can see here, all the passwords stored are hashed.
 [Github](https://github.com/Siuumanth/MARVEL/tree/main/Level-2-/hashing)
+<br />
 
 ---
+
+
+<br />
+
 ## TASK 10: NMap
 
 Nmap is a powerful network discovery tool that can be used for :
@@ -218,9 +270,24 @@ Scanning a website [scanme.org]
 Here, we can see:
 1. DNS in action.
 2. OpenSSH running on Ubuntu, and its versions which can be exploited.
-3. Web server with an open insecure HTTP port. The version is older, which can make it vulnerable.
+3. Web server with an open insecure HTTP port. The version is older,which can make it vulnerable.
 
-I even scanned my AWS EC2 instance, where I was able to verify the OS running and ports enabled.
-<br>
+I even scanned my AWS EC2 instance, where I verified the OS running and ports enabled.
+
+
+
+<br />
 
 ---
+
+
+
+<br />
+
+[Detailed notes on all tasks](https://github.com/Siuumanth/MARVEL/tree/main/Level-2-)
+
+<br />
+
+
+
+
