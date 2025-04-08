@@ -20,17 +20,23 @@ It sounds like there are no servers, but it just means that we don't have to **m
       
 2. `Attaching Integrations:` I created a single lambda function which would manage each of the routes using switch case. I wrote the backend code for the chatApp.
 
+AWS lambda backend:
+![u](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/1-cases.png?raw=true)
+
+![umm](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/1-send.png?raw=true)
 
 
+Testing in terminal:
+![umm](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/1-cmd.png?raw=true)
 
-Web socket code:
+Final look:
 
-![umm](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/1-code.png?raw=true)
+![umm](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/1-cm.png?raw=true)
 
 
-![umm](https://github.com/Siuumanth/MARVEL/blob/main/Level-2-/images/1-webs.png?raw=true)
+[Hosted website link](https://chat-app-aws-lambda.onrender.com)
 
-[Github link](https://github.com/Siuumanth/MARVEL/tree/main/Level-2-/AWS/AWS-ChatApp/Chat-app)
+[Github link of code and detailed notes](https://github.com/Siuumanth/Chat-app-AWS-lambda)
 
 <br />
 
@@ -47,7 +53,6 @@ I first familiarized myself with the knowledge of DevOps, how it improves the so
 
 - **Continuous Deployment (CD)** automates the release process, pushing changes to production automatically after passing all tests, while **Continuous Delivery** prepares the code for deployment but requires manual approval to push it live. 
 ### CI/CD with Jenkins:
-Jenkins is an automation platform that allows you to **build, test, and deploy** software using pipelines. It is widely used in CI/CD to streamline the software development process. 
 
 I first familiarized myself with the Jenkins UI and learnt how to `create and scheduling jobs, logging, running jobs, managing teams, etc.`  I tested it on a simple Java application. The setup was able to pull the code from Github, and run tests to get an output and log it.
 
